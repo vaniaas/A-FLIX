@@ -1,4 +1,5 @@
 import React from "react";
+import { assetPath } from "../lib/assets";
 
 export default function LibraryGrid({ page }) {
   return (
@@ -17,7 +18,7 @@ export default function LibraryGrid({ page }) {
             rel="noreferrer"
           >
             <div className="folder-card__art">
-              <img src="/images/folder.png" alt={`Folder ${item.title}`} />
+              <img src={assetPath("images/folder.png")} alt={`Folder ${item.title}`} />
             </div>
             <div className="folder-card__body">
               <h2 className="folder-card__title">{item.title}</h2>

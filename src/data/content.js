@@ -1,26 +1,28 @@
+import { assetPath } from "../lib/assets";
+
 export const heroContent = {
   title: "Catatan dan Soal",
   description:
     "Website ini berisi catatan dan soal-soal yang dibuat oleh Vincent, Stefanus, dan Vania, plus koleksi soal bagus yang ditemukan dari internet.",
-  backgroundImage: "/images/joshy-heist.png",
+  backgroundImage: assetPath("images/joshy-heist.png"),
 };
 
 export const originals = [
   {
     title: "Stefanus Kurus",
-    image: "/images/stefanuskurus.jpg",
+    image: assetPath("images/stefanuskurus.jpg"),
   },
   {
     title: "Stefanus Oplas",
-    image: "/images/stefanusoplas.jpg",
+    image: assetPath("images/stefanusoplas.jpg"),
   },
   {
     title: "Jos Absurd",
-    image: "/images/josabsurd.png",
+    image: assetPath("images/josabsurd.png"),
   },
   {
     title: "Vincent Wibu",
-    image: "/images/vincentwibu.jpg",
+    image: assetPath("images/vincentwibu.jpg"),
   },
 ];
 

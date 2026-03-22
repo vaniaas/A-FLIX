@@ -1,4 +1,5 @@
 import React from "react";
+import { assetPath } from "../lib/assets";
 
 export default function Navbar({ pages, currentPage, onNavigate }) {
   return (
@@ -9,7 +10,7 @@ export default function Navbar({ pages, currentPage, onNavigate }) {
         onClick={() => onNavigate("home")}
         aria-label="Go to A-FLIX home"
       >
-        <img className="nav__logo" src="/images/logo.png" alt="A-FLIX" />
+        <img className="nav__logo" src={assetPath("images/logo.png")} alt="A-FLIX" />
       </button>
       <div className="nav__links">
         {pages.map((page) => (
